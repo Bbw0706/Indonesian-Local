@@ -1,0 +1,27 @@
+.home-wrapper {
+  min-height: 100vh;
+  height: auto;
+  background: #1b1e23;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+  text-align: center;
+  padding-top: 20px; }
+  .home-wrapper .map-wrapper {
+    position: relative !important;
+    display: inline-block;
+    width: 100%;
+    text-align: center; }
+    .home-wrapper .map-wrapper div {
+      height: 300px; }
+      .home-wrapper .map-wrapper div div {
+        margin-left: auto;
+        margin-right: auto; }
