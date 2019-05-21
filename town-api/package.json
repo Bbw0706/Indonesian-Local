@@ -1,0 +1,26 @@
+{
+  "name": "chat-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm install && node app",
+    "dev": "nodemon app"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "pg-promise": "^8.7.2",
+    "redis": "^2.8.0",
+    "swagger-ui-express": "^4.0.2"
+  }
+}

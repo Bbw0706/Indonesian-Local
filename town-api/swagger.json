@@ -1,0 +1,72 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Chat API",
+    "description": "Free Chat API",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:3000",
+  "basePath": "/api/v1",
+  "tags": [
+    {
+      "name": "Messages",
+      "description": "API for message in the system"
+    }
+  ],
+  "schemes": [
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "paths": {
+    "/messages": {
+      "post": {
+        "tags": [
+          "Messages"
+        ],
+        "summary": "Create a messages",
+        "description": "Create a messages",
+        "parameters": [
+          {
+            "messages": "Hello world"
+          }
+        ],
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "result": {
+            "id": "id",
+            "messages": "messages"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Messages"
+        ],
+        "summary": "Get all users in db",
+        "responses": {
+          "result": [
+            {
+            "id": "id",
+            "messages": "messages"
+            },
+            {
+              "id": "id",
+              "messages": "messages"
+            }
+          ]
+        }
+      }
+    }
+  }
+}
